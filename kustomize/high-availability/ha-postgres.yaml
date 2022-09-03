@@ -26,9 +26,20 @@ spec:
                   postgres-operator.crunchydata.com/instance-set: pgha1
   backups:
     pgbackrest:
+      restore:
+        enabled: true
+        repoName: repo1
+        options:
+          - --type=time
+          - --target="2022-09-03 06:48:21.885055+00"
+      global:
+        repo1-retention-full: "3"
+        repo1-retention-full-type: count
       image: registry.developers.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-2.40-0
       repos:
       - name: repo1
+        schedules:
+          full: "*/15 * * * *" 
         volume:
           volumeClaimSpec:
             accessModes:
@@ -50,3 +61,24 @@ spec:
                 matchLabels:
                   postgres-operator.crunchydata.com/cluster: hippo-ha
                   postgres-operator.crunchydata.com/role: pgbouncer
+
+  patroni:
+    dynamicConfiguration:
+      postgresql:
+        parameters:
+          max_connections: 40
+          shared_buffers: 512MB
+          effective_cache_size: 1536MB
+          maintenance_work_mem: 128MB
+          checkpoint_completion_target: 0.9
+          wal_buffers: 16MB
+          default_statistics_target: 100
+          random_page_cost: 1.1
+          effective_io_concurrency: 200
+          work_mem: 13107kB
+          min_wal_size: 1GB
+          max_wal_size: 8GB
+          max_worker_processes: 2
+          max_parallel_workers_per_gather: 1
+          max_parallel_workers: 2
+          max_parallel_maintenance_workers: 1          

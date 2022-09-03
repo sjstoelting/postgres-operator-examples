@@ -1,0 +1,176 @@
+2022-09-03 06:32:16,976 INFO: No PostgreSQL configuration items changed, nothing to reload.
+2022-09-03 06:32:16,979 INFO: Lock owner: None; I am hippo-ha-pgha1-hghh-0
+2022-09-03 06:32:17,123 INFO: trying to bootstrap a new cluster
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.utf-8".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+
+fixing permissions on existing directory /pgdata/pg14 ... ok
+creating directory /pgdata/pg14_wal ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+
+Success. You can now start the database server using:
+
+    /usr/pgsql-14/bin/pg_ctl -D /pgdata/pg14 -l logfile start
+
+initdb: warning: enabling "trust" authentication for local connections
+You can change this by editing pg_hba.conf or using the option -A, or
+--auth-local and --auth-host, the next time you run initdb.
+2022-09-03 06:32:18.010 UTC [88] LOG:  pgaudit extension initialized
+2022-09-03 06:32:18,016 INFO: postmaster pid=88
+/tmp/postgres:5432 - no response
+2022-09-03 06:32:18.024 UTC [88] LOG:  redirecting log output to logging collector process
+2022-09-03 06:32:18.024 UTC [88] HINT:  Future log output will appear in directory "log".
+/tmp/postgres:5432 - accepting connections
+/tmp/postgres:5432 - accepting connections
+2022-09-03 06:32:19,113 INFO: establishing a new patroni connection to the postgres cluster
+2022-09-03 06:32:19,191 INFO: running post_bootstrap
+2022-09-03 06:32:19,390 INFO: initialized a new cluster
+2022-09-03 06:32:19,511 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:32:29,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:32:39,991 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:32:49,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:32:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:33:09,939 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:33:19,991 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:33:29,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:33:39,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:33:49,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:33:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:34:09,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:34:19,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:34:29,946 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:34:39,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:34:49,934 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:34:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:35:10,019 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:35:19,939 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:35:29,947 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:35:39,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:35:49,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:35:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:36:10,000 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:36:19,992 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:36:29,998 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:36:40,000 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:36:49,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:36:59,993 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:37:09,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:37:19,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:37:30,004 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:37:40,009 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:37:50,034 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:37:59,994 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:38:09,990 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:38:19,990 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:38:29,943 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:38:39,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:38:49,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:38:59,949 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:39:10,017 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:39:19,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:39:29,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:39:39,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:39:49,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:39:59,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:40:09,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:40:19,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:40:29,941 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:40:39,948 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:40:49,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:40:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:41:09,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:41:19,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:41:29,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:41:39,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:41:49,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:41:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:42:09,942 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:42:19,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:42:29,942 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:42:39,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:42:49,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:42:59,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:43:09,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:43:19,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:43:29,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:43:39,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:43:49,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:43:59,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:44:09,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:44:19,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:44:29,942 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:44:39,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:44:49,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:44:59,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:45:09,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:45:19,942 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:45:29,942 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:45:39,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:45:49,939 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:45:59,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:46:09,990 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:46:19,992 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:46:29,949 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:46:39,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:46:49,987 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:46:59,992 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:47:09,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:47:19,943 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:47:29,941 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:47:39,990 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:47:49,992 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:47:59,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:48:09,939 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:48:19,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:48:29,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:48:39,939 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:48:49,939 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:48:59,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:49:09,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:49:20,010 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:49:29,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:49:39,995 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:49:49,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:49:59,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:50:09,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:50:19,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:50:29,943 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:50:39,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:50:49,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:50:59,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:51:09,996 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:51:19,996 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:51:29,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:51:39,995 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:51:49,944 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:51:59,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:52:09,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:52:19,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:52:29,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:52:39,938 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:52:49,945 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:52:59,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:53:09,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:53:19,940 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:53:29,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:53:39,936 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:53:49,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:53:59,941 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:54:09,941 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:54:19,935 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:54:29,945 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock
+2022-09-03 06:54:39,937 INFO: no action. I am (hippo-ha-pgha1-hghh-0), the leader with the lock

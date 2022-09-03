@@ -1,0 +1,12 @@
+2022-09-03 06:32:18.024 UTC [88] LOG:  starting PostgreSQL 14.5 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10), 64-bit
+2022-09-03 06:32:18.024 UTC [88] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-09-03 06:32:18.024 UTC [88] LOG:  listening on IPv6 address "::", port 5432
+2022-09-03 06:32:18.026 UTC [88] LOG:  listening on Unix socket "/tmp/postgres/.s.PGSQL.5432"
+2022-09-03 06:32:18.030 UTC [91] LOG:  database system was shut down at 2022-09-03 06:32:17 UTC
+2022-09-03 06:32:18.032 UTC [88] LOG:  database system is ready to accept connections
+ERROR: [103]: unable to find a valid repository:
+       repo1: [HostConnectError] unable to get address for 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': [-2] Name or service not known
+2022-09-03 06:35:18.205 UTC [96] LOG:  archive command failed with exit code 103
+2022-09-03 06:35:18.205 UTC [96] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+2022-09-03 06:46:41.476 UTC [1104] LOG:  restore point "pgBackRest Archive Check" created at 0/A10000C8
+2022-09-03 06:46:41.476 UTC [1104] STATEMENT:  select pg_catalog.pg_create_restore_point('pgBackRest Archive Check')::text
