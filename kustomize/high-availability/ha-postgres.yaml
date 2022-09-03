@@ -26,9 +26,20 @@ spec:
                   postgres-operator.crunchydata.com/instance-set: pgha1
   backups:
     pgbackrest:
+      restore:
+        enabled: true
+        repoName: repo1
+        options:
+          - --type=time
+          - --target="2022-09-03 05:57:41.563908+00"
+      global:
+        repo1-retention-full: "3"
+        repo1-retention-full-type: count
       image: registry.developers.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-2.40-0
       repos:
       - name: repo1
+        schedules:
+          full: "*/15 * * * *" 
         volume:
           volumeClaimSpec:
             accessModes:

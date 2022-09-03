@@ -1,0 +1,33 @@
+2022-09-03 05:45:24.832 UTC [85] LOG:  starting PostgreSQL 14.5 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10), 64-bit
+2022-09-03 05:45:24.832 UTC [85] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-09-03 05:45:24.832 UTC [85] LOG:  listening on IPv6 address "::", port 5432
+2022-09-03 05:45:24.834 UTC [85] LOG:  listening on Unix socket "/tmp/postgres/.s.PGSQL.5432"
+2022-09-03 05:45:24.838 UTC [88] LOG:  database system was shut down at 2022-09-03 05:45:24 UTC
+2022-09-03 05:45:24.838 UTC [89] FATAL:  the database system is starting up
+2022-09-03 05:45:24.841 UTC [85] LOG:  database system is ready to accept connections
+ERROR: [103]: unable to find a valid repository:
+       repo1: [HostConnectError] unable to get address for 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': [-2] Name or service not known
+2022-09-03 05:47:27.029 UTC [95] LOG:  archive command failed with exit code 103
+2022-09-03 05:47:27.029 UTC [95] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+2022-09-03 05:51:30.393 UTC [91] LOG:  checkpoints are occurring too frequently (12 seconds apart)
+2022-09-03 05:51:30.393 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:51:37.073 UTC [91] LOG:  checkpoints are occurring too frequently (7 seconds apart)
+2022-09-03 05:51:37.073 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:51:44.179 UTC [91] LOG:  checkpoints are occurring too frequently (7 seconds apart)
+2022-09-03 05:51:44.179 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:51:49.160 UTC [91] LOG:  checkpoints are occurring too frequently (5 seconds apart)
+2022-09-03 05:51:49.160 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:51:52.246 UTC [91] LOG:  checkpoints are occurring too frequently (3 seconds apart)
+2022-09-03 05:51:52.246 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:51:56.732 UTC [91] LOG:  checkpoints are occurring too frequently (4 seconds apart)
+2022-09-03 05:51:56.732 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:52:00.222 UTC [91] LOG:  checkpoints are occurring too frequently (4 seconds apart)
+2022-09-03 05:52:00.222 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:52:03.796 UTC [91] LOG:  checkpoints are occurring too frequently (3 seconds apart)
+2022-09-03 05:52:03.796 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 05:52:11.523 UTC [91] LOG:  checkpoints are occurring too frequently (8 seconds apart)
+2022-09-03 05:52:11.523 UTC [91] HINT:  Consider increasing the configuration parameter "max_wal_size".
+2022-09-03 06:00:03.057 UTC [1293] LOG:  restore point "pgBackRest Archive Check" created at 1/40000140
+2022-09-03 06:00:03.057 UTC [1293] STATEMENT:  select pg_catalog.pg_create_restore_point('pgBackRest Archive Check')::text
+2022-09-03 06:15:02.908 UTC [2303] LOG:  restore point "pgBackRest Archive Check" created at 1/44000140
+2022-09-03 06:15:02.908 UTC [2303] STATEMENT:  select pg_catalog.pg_create_restore_point('pgBackRest Archive Check')::text
