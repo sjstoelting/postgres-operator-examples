@@ -9,8 +9,6 @@ PG_CLUSTER_PRIMARY_POD=$(kubectl get pod -n postgres-operator -o name \
 
 kubectl exec --stdin -n postgres-operator --tty "${PG_CLUSTER_PRIMARY_POD}" -- /bin/bash
 
-psql -c "CREATE DATABASE testdb"
-
 pgbench -i -s 200 testdb
 
 exit
@@ -26,7 +24,7 @@ kubectl exec --stdin -n postgres-operator --tty "${PG_CLUSTER_PRIMARY_POD}" -- /
 psql -c "SELECT current_timestamp, pg_size_pretty(pg_database_size('testdb'))"
        current_timestamp       | pg_size_pretty 
 -------------------------------+----------------
-2022-09-26 13:06:09.536499+00 | 2999 MB
+2022-09-26 15:47:39.436997+00 | 2999 MB
 (1 row)
 
 
@@ -52,14 +50,28 @@ kubectl exec --stdin -n postgres-operator --tty "${PG_CLUSTER_PRIMARY_POD}" -- /
 
 
 psql -c "\d" testdb
-              List of relations
- Schema |       Name       | Type  |  Owner   
---------+------------------+-------+----------
- public | pgbench_accounts | table | postgres
- public | pgbench_branches | table | postgres
- public | pgbench_tellers  | table | postgres
+psql: error: connection to server on socket "/tmp/postgres/.s.PGSQL.5432" failed: FATAL:  database "testdb" does not exist
+DETAIL:  The database subdirectory "base/16409" is missing.
 
-# Table pgbench_history has not been restored!!!
+
+bash-4.4$ psql 
+psql (14.5)
+Type "help" for help.
+
+postgres=# \l
+                                   List of databases
+   Name    |  Owner   | Encoding |   Collate   |    Ctype    |    Access privileges    
+-----------+----------+----------+-------------+-------------+-------------------------
+ hippo-ha  | postgres | UTF8     | en_US.utf-8 | en_US.utf-8 | =Tc/postgres           +
+           |          |          |             |             | postgres=CTc/postgres  +
+           |          |          |             |             | "hippo-ha"=CTc/postgres
+ postgres  | postgres | UTF8     | en_US.utf-8 | en_US.utf-8 | 
+ template0 | postgres | UTF8     | en_US.utf-8 | en_US.utf-8 | =c/postgres            +
+           |          |          |             |             | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf-8 | en_US.utf-8 | =c/postgres            +
+           |          |          |             |             | postgres=CTc/postgres
+ testdb    | postgres | UTF8     | en_US.utf-8 | en_US.utf-8 | 
+(5 rows)
 
 exit
 

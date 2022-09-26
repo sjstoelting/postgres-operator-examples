@@ -3,6 +3,10 @@ kind: PostgresCluster
 metadata:
   name: hippo-ha
 spec:
+  users:
+    - name: postgres
+      databases:
+        - testdb
   image: registry.developers.crunchydata.com/crunchydata/crunchy-postgres:ubi8-14.5-1
   postgresVersion: 14
   instances:
@@ -31,7 +35,7 @@ spec:
         repoName: repo1
         options:
           - --type=time
-          - --target="2022-09-26 13:06:09.536499+00"
+          - --target="2022-09-26 15:47:39.436997+00"
       global:
         repo1-retention-full: "3"
         repo1-retention-full-type: count
