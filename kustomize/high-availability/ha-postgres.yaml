@@ -27,11 +27,11 @@ spec:
   backups:
     pgbackrest:
       restore:
-        enabled: false
+        enabled: true
         repoName: repo1
         options:
           - --type=time
-          - --target="2022-09-03 06:48:21.885055+00"
+          - --target="2022-09-26 13:06:09.536499+00"
       global:
         repo1-retention-full: "3"
         repo1-retention-full-type: count
