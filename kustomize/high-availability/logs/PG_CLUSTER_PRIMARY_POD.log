@@ -1,0 +1,41 @@
+2022-09-26 15:54:01,853 INFO: No PostgreSQL configuration items changed, nothing to reload.
+2022-09-26 15:54:01,858 INFO: Lock owner: None; I am hippo-ha-pgha1-dz5w-0
+2022-09-26 15:54:02,012 INFO: trying to bootstrap a new cluster
+2022-09-26 15:54:02,013 INFO: Running custom bootstrap script: mv "/pgdata/pg14_bootstrap" "/pgdata/pg14"
+2022-09-26 15:54:02.236 UTC [93] LOG:  pgaudit extension initialized
+2022-09-26 15:54:02,247 INFO: postmaster pid=93
+/tmp/postgres:5432 - no response
+2022-09-26 15:54:02.254 UTC [93] LOG:  redirecting log output to logging collector process
+2022-09-26 15:54:02.254 UTC [93] HINT:  Future log output will appear in directory "log".
+/tmp/postgres:5432 - accepting connections
+/tmp/postgres:5432 - accepting connections
+2022-09-26 15:54:03,294 INFO: establishing a new patroni connection to the postgres cluster
+2022-09-26 15:54:03,354 INFO: running post_bootstrap
+server signaled
+2022-09-26 15:54:04,384 INFO: establishing a new patroni connection to the postgres cluster
+2022-09-26 15:54:04,543 INFO: initialized a new cluster
+2022-09-26 15:54:04,638 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:54:15,141 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:54:25,164 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:54:35,093 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:54:45,090 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:54:55,089 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:55:05,151 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:55:15,089 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:55:25,092 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:55:35,094 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:55:45,088 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:55:55,100 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:56:05,089 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:56:15,092 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:56:25,101 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:56:35,093 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:56:45,088 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:56:55,093 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:57:05,111 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:57:15,091 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:57:25,089 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:57:35,087 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:57:45,095 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:57:55,101 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock
+2022-09-26 15:58:05,089 INFO: no action. I am (hippo-ha-pgha1-dz5w-0), the leader with the lock

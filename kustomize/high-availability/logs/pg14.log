@@ -1,0 +1,119 @@
+2022-09-26 15:30:52.287 UTC [83] LOG:  starting PostgreSQL 14.5 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10), 64-bit
+2022-09-26 15:30:52.288 UTC [83] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-09-26 15:30:52.288 UTC [83] LOG:  listening on IPv6 address "::", port 5432
+2022-09-26 15:30:52.289 UTC [83] LOG:  listening on Unix socket "/tmp/postgres/.s.PGSQL.5432"
+2022-09-26 15:30:52.292 UTC [86] LOG:  database system was shut down at 2022-09-26 15:30:52 UTC
+2022-09-26 15:30:52.294 UTC [83] LOG:  database system is ready to accept connections
+ERROR: [103]: unable to find a valid repository:
+       repo1: [FileMissingError] unable to load info file '/pgbackrest/repo1/archive/db/archive.info' or '/pgbackrest/repo1/archive/db/archive.info.copy':
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info' for read
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info.copy' for read
+       HINT: archive.info cannot be opened but is required to push/get WAL segments.
+       HINT: is archive_command configured correctly in postgresql.conf?
+       HINT: has a stanza-create been performed?
+       HINT: use --no-archive-check to disable archive checks during backup if you have an alternate archiving scheme.
+2022-09-26 15:33:24.736 UTC [91] LOG:  archive command failed with exit code 103
+2022-09-26 15:33:24.736 UTC [91] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+ERROR: [103]: unable to find a valid repository:
+       repo1: [FileMissingError] unable to load info file '/pgbackrest/repo1/archive/db/archive.info' or '/pgbackrest/repo1/archive/db/archive.info.copy':
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info' for read
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info.copy' for read
+       HINT: archive.info cannot be opened but is required to push/get WAL segments.
+       HINT: is archive_command configured correctly in postgresql.conf?
+       HINT: has a stanza-create been performed?
+       HINT: use --no-archive-check to disable archive checks during backup if you have an alternate archiving scheme.
+2022-09-26 15:33:25.749 UTC [91] LOG:  archive command failed with exit code 103
+2022-09-26 15:33:25.749 UTC [91] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+ERROR: [103]: unable to find a valid repository:
+       repo1: [FileMissingError] unable to load info file '/pgbackrest/repo1/archive/db/archive.info' or '/pgbackrest/repo1/archive/db/archive.info.copy':
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info' for read
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info.copy' for read
+       HINT: archive.info cannot be opened but is required to push/get WAL segments.
+       HINT: is archive_command configured correctly in postgresql.conf?
+       HINT: has a stanza-create been performed?
+       HINT: use --no-archive-check to disable archive checks during backup if you have an alternate archiving scheme.
+2022-09-26 15:33:26.762 UTC [91] LOG:  archive command failed with exit code 103
+2022-09-26 15:33:26.762 UTC [91] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+2022-09-26 15:33:26.762 UTC [91] WARNING:  archiving write-ahead log file "000000010000000000000001" failed too many times, will try again later
+ERROR: [103]: unable to find a valid repository:
+       repo1: [FileMissingError] unable to load info file '/pgbackrest/repo1/archive/db/archive.info' or '/pgbackrest/repo1/archive/db/archive.info.copy':
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info' for read
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info.copy' for read
+       HINT: archive.info cannot be opened but is required to push/get WAL segments.
+       HINT: is archive_command configured correctly in postgresql.conf?
+       HINT: has a stanza-create been performed?
+       HINT: use --no-archive-check to disable archive checks during backup if you have an alternate archiving scheme.
+2022-09-26 15:33:26.773 UTC [91] LOG:  archive command failed with exit code 103
+2022-09-26 15:33:26.773 UTC [91] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+ERROR: [103]: unable to find a valid repository:
+       repo1: [FileMissingError] unable to load info file '/pgbackrest/repo1/archive/db/archive.info' or '/pgbackrest/repo1/archive/db/archive.info.copy':
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info' for read
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info.copy' for read
+       HINT: archive.info cannot be opened but is required to push/get WAL segments.
+       HINT: is archive_command configured correctly in postgresql.conf?
+       HINT: has a stanza-create been performed?
+       HINT: use --no-archive-check to disable archive checks during backup if you have an alternate archiving scheme.
+2022-09-26 15:33:27.786 UTC [91] LOG:  archive command failed with exit code 103
+2022-09-26 15:33:27.786 UTC [91] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+ERROR: [103]: unable to find a valid repository:
+       repo1: [FileMissingError] unable to load info file '/pgbackrest/repo1/archive/db/archive.info' or '/pgbackrest/repo1/archive/db/archive.info.copy':
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info' for read
+       FileMissingError: raised from remote-0 tls protocol on 'hippo-ha-repo-host-0.hippo-ha-pods.postgres-operator.svc.cluster.local.': unable to open missing file '/pgbackrest/repo1/archive/db/archive.info.copy' for read
+       HINT: archive.info cannot be opened but is required to push/get WAL segments.
+       HINT: is archive_command configured correctly in postgresql.conf?
+       HINT: has a stanza-create been performed?
+       HINT: use --no-archive-check to disable archive checks during backup if you have an alternate archiving scheme.
+2022-09-26 15:33:28.801 UTC [91] LOG:  archive command failed with exit code 103
+2022-09-26 15:33:28.801 UTC [91] DETAIL:  The failed archive command was: pgbackrest --stanza=db archive-push "pg_wal/000000010000000000000001"
+2022-09-26 15:33:28.801 UTC [91] WARNING:  archiving write-ahead log file "000000010000000000000001" failed too many times, will try again later
+2022-09-26 15:45:02.974 UTC [1145] LOG:  restore point "pgBackRest Archive Check" created at 0/A0000140
+2022-09-26 15:45:02.974 UTC [1145] STATEMENT:  select pg_catalog.pg_create_restore_point('pgBackRest Archive Check')::text
+2022-09-26 15:54:02.254 UTC [93] LOG:  starting PostgreSQL 14.5 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10), 64-bit
+2022-09-26 15:54:02.254 UTC [93] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2022-09-26 15:54:02.254 UTC [93] LOG:  listening on IPv6 address "::", port 5432
+2022-09-26 15:54:02.256 UTC [93] LOG:  listening on Unix socket "/tmp/postgres/.s.PGSQL.5432"
+2022-09-26 15:54:02.259 UTC [96] LOG:  database system was shut down at 2022-09-26 15:53:55 UTC
+2022-09-26 15:54:02.263 UTC [93] LOG:  database system is ready to accept connections
+2022-09-26 15:54:03.366 UTC [93] LOG:  received SIGHUP, reloading configuration files
+2022-09-26 15:54:05.871 UTC [151] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:05.871 UTC [151] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:06.577 UTC [174] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:06.577 UTC [174] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:07.273 UTC [198] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:07.273 UTC [198] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:07.865 UTC [220] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:07.865 UTC [220] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:08.638 UTC [257] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:08.638 UTC [257] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:09.788 UTC [282] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:09.788 UTC [282] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:10.411 UTC [296] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:10.411 UTC [296] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:11.007 UTC [309] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:11.007 UTC [309] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:11.617 UTC [322] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:11.617 UTC [322] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:12.175 UTC [334] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:12.175 UTC [334] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:12.711 UTC [347] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:12.711 UTC [347] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:15.378 UTC [361] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:15.378 UTC [361] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:26.208 UTC [382] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:26.208 UTC [382] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:54:47.300 UTC [416] FATAL:  database "testdb" does not exist
+2022-09-26 15:54:47.300 UTC [416] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:55:03.442 UTC [443] FATAL:  database "testdb" does not exist
+2022-09-26 15:55:03.442 UTC [443] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:55:03.669 UTC [445] FATAL:  database "testdb" does not exist
+2022-09-26 15:55:03.669 UTC [445] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:55:28.833 UTC [489] FATAL:  database "testdb" does not exist
+2022-09-26 15:55:28.833 UTC [489] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:56:03.465 UTC [521] FATAL:  database "testdb" does not exist
+2022-09-26 15:56:03.465 UTC [521] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:56:51.345 UTC [583] FATAL:  database "testdb" does not exist
+2022-09-26 15:56:51.345 UTC [583] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:57:03.492 UTC [594] FATAL:  database "testdb" does not exist
+2022-09-26 15:57:03.492 UTC [594] DETAIL:  The database subdirectory "base/16409" is missing.
+2022-09-26 15:58:03.494 UTC [654] FATAL:  database "testdb" does not exist
+2022-09-26 15:58:03.494 UTC [654] DETAIL:  The database subdirectory "base/16409" is missing.
